@@ -1,0 +1,28 @@
+{
+  "name": "example-dockerizing-express",
+  "version": "1.0.0",
+  "description": "Example Express Server w/ Babel",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register",
+    "build": "babel lib -d dist",
+    "dev": "cross-env NODE_ENV=dev nodemon dist/index.js",
+    "start:dev": "cross-env NODE_ENV=dev node dist/index.js",
+    "start:test": "cross-env NODE_ENV=test node dist/index.js",
+    "start:production": "cross-env NODE_ENV=production node dist/index.js"
+  },
+  "author": "sdg9670 <sdg9670@naver.com>",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "mocha": "^8.0.0",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1"
+  }
+}
