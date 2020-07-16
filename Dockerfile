@@ -37,5 +37,5 @@ COPY --from=dependencies /example-dockerizing-express/prod_node_modules ./node_m
 # copy app sources
 COPY --from=builder /example-dockerizing-express/dist ./dist
 # expose port and define CMD
-EXPOSE 3300
+EXPOSE 3000
 CMD ["sh", "-c", "npm run start:${NODE_ENV}"]
