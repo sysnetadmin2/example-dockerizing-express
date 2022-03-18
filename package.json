@@ -11,7 +11,7 @@
     "start:test": "cross-env NODE_ENV=test node dist/index.js",
     "start:production": "cross-env NODE_ENV=production node dist/index.js"
   },
-  "author": "sdg9670 <sdg9670@naver.com>",
+  "author": "sdg9670 <sdg96440@naver.com>",
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
